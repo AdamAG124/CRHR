@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link th:href="@{/Styles/Styles.css}" rel="stylesheet">
+    <script th:src="@{/js/script.js}"></script>
+    <!-- Icon Font Stylesheet -->
+    <script src="https://kit.fontawesome.com/51553d23ad.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 600px;
+            width: 90%;
+            margin: 20rem auto;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            text-align: center;
+        }
+        .container p {
+            color: #001701;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .container a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #f4d85a;
+            color: #001701;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        .container a:hover {
+            background-color: #e4c75a;
+        }
+    </style>
+</head>
+<body onload="inicializar()">
+<div id="header-contact-info-container">
+
+</div>
+
+<div class="container">
+    <p>
+        ¡Muy pronto comenzaremos a publicar nuestras propiedades en venta. No se quede sin publicar la suya, pongase en contacto con nosotros y pronto verá su propiedad aquí!
+    </p>
+    <a href="/contact">Quiero vender mi propiedad</a>
+</div>
+
+<div id="footer-derechos">
+
+</div>
+</body>
+</html>

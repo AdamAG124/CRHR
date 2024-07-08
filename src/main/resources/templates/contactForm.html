@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRHR - Formulario de Contacto</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <script src="js/contactScripts/sendContactRequest.js"></script>
+    <link href="Styles/Styles.css" rel="stylesheet">
+    <link href="Styles/contactFormStyle.css" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <script src="https://kit.fontawesome.com/51553d23ad.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body onload="inicializar()">
+<div id="header-contact-info-container">
+    <!-- Aquí puedes agregar cualquier contenido necesario en este div -->
+</div>
+
+<div class="container contact-container">
+    <div class="contact-info">
+        <div>
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel:+50612345678" style="color: #001701; text-decoration: none;">+506 1234 5678</a>
+        </div>
+        <div>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:info@crhomesrealty.com" style="color: #001701; text-decoration: none;">info@crhomesrealty.com</a>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/profile.php?id=61556631089453" style="color: #001701; text-decoration: none;">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+        </div>
+        <div>
+            <a href="https://www.instagram.com/crhomesrealty/" style="color: #001701; text-decoration: none;">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <div class="contact-image text-center">
+            <img src="https://via.placeholder.com/150" alt="contact form" />
+        </div>
+        <form class="form-contact" id="form-contact" method="post" action="/sendContactForm">
+            <h3>¡Contáctanos!</h3>
+            <div class="form-group">
+                <label for="name">Nombre y Apellidos</label>
+                <input type="text" name="name" class="form-control" placeholder="Nombre y Apellidos" />
+            </div>
+            <div class="form-group">
+                <label for="phone">Número de Teléfono</label>
+                <input type="text" name="phone" class="form-control" placeholder="Número de Teléfono" />
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" name="email" class="form-control" placeholder="Correo Electrónico"/>
+            </div>
+            <div class="form-group">
+                <label for="subject">Asunto</label>
+                <select name="subject">
+                    <option>--Seleccionar--</option>
+                    <option>Vender</option>
+                    <option>Alquilar</option>
+                    <option>Otro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea name="message" class="form-control" placeholder="Mensaje" rows="5"></textarea>
+            </div>
+            <div>
+                <p id="texto_error"></p>
+            </div>
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-contact" onclick="validarEnvioFormularioContacto()">Enviar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="footer-derechos" class="text-center py-3">
+    <p>&copy; 2024 CR Homes Realty. Todos los derechos reservados.</p>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
