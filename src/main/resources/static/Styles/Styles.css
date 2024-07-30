@@ -16,9 +16,12 @@ html {
 }
 
 body {
-    font-family: "Merriweather", serif;
-    font-weight: 300;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
     font-style: normal;
+    font-variation-settings:
+            "slnt" 0;
 }
 
 *,
@@ -82,13 +85,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 5%;
+    padding-right: 15%;
 }
 
 .custom-nav-header a {
     color: var(--light);
     text-decoration: none;
-    padding-right: 1%;
+    padding-right: 4%;
 }
 
 /*Header Design End*/
@@ -156,6 +159,7 @@ header {
     background-color: var(--primary);
     text-align: center;
     padding: 2% 2%;
+    text-align: justify;
 }
 
 /*About Us Design End*/

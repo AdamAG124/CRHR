@@ -14,6 +14,10 @@
     <!-- Icon Font Stylesheet -->
     <script src="https://kit.fontawesome.com/51553d23ad.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body onload="inicializar()">
@@ -29,7 +33,7 @@
         </div>
         <div>
             <i class="fas fa-envelope"></i>
-            <a href="mailto:info@crhomesrealty.com" style="color: #001701; text-decoration: none;">info@crhomesrealty.com</a>
+            <a href="mailto:costaricahomesrealty@gmail.com" style="color: #001701; text-decoration: none;">costaricahomesrealty@gmail.com</a>
         </div>
         <div>
             <a href="https://www.facebook.com/profile.php?id=61556631089453" style="color: #001701; text-decoration: none;">
@@ -44,9 +48,9 @@
     </div>
 
     <div class="contact-form">
-        <div class="contact-image text-center">
+        <!--<div class="contact-image text-center">
             <img src="https://via.placeholder.com/150" alt="contact form" />
-        </div>
+        </div>-->
         <form class="form-contact" id="form-contact" method="post" action="/sendContactForm">
             <h3>¡Contáctanos!</h3>
             <div class="form-group">
@@ -63,7 +67,7 @@
             </div>
             <div class="form-group">
                 <label for="subject">Asunto</label>
-                <select name="subject">
+                <select name="subject" class="form-control custom-select">
                     <option>--Seleccionar--</option>
                     <option>Vender</option>
                     <option>Alquilar</option>
