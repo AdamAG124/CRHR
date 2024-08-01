@@ -25,19 +25,37 @@
     <script src="js/script.js"></script>
 </head>
 
-<body onload="inicializar()">
+<body>
     <div id="header-contact-info-container">
 
     </div>
 
+    <!-- Nav Responsive Start -->
+    <nav class="custom-nav-responsive">
+        <label for="check" class="custom-checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <input type="checkbox" id="check">
+
+        <ul class="custom-ul-menu">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="/alquileres/disponibles">Alquileres</a></li>
+            <li><a href="/ventas/disponibles">Ventas</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="/contact">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- Nav Responsive End -->
+
     <!-- Front Page Start -->
-    <div class="Front-Page">
+    <div class="Front-Page" id="Front-Page">
         <video class="video-background" autoplay muted loop>
             <source src="Images/Video Portada CRHR.mp4" type="video/mp4">
             <source src="Images/Video Portada CRHR.mp4" type="video/webm">
             Your browser does not support the video tag.
         </video>
-        <div class="front-page-text">
+        <div class="front-page-text" id="front-page-text">
             <h1>Bienvenido a CRHR - Su Destino Ideal en Bienes Raíces</h1>
             <h4 class="text-comp">Con más de 10 años de experiencia en atención al cliente, la compañía más pura vida en bienes raíces de Costa Rica.</h4>
             <h4 class="text-responsive">Con más de 10 años de experiencia en atención al cliente, la compañía más pura vida en bienes raíces en Costa Rica.</h4>
@@ -231,6 +249,13 @@
     <div id="footer-derechos">
 
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Llama a tu función aquí
+            inicializar();
+        });
+    </script>
 </body>
 
 </html>

@@ -18,7 +18,6 @@ html {
 body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
     font-style: normal;
     font-variation-settings:
             "slnt" 0;
@@ -66,8 +65,8 @@ body {
 header {
     width: 100%;
     background-color: var(--primary);
-    height: 5rem;
     display: flex;
+    align-items: center;
 }
 
 .custom-logo-header {
@@ -81,11 +80,11 @@ header {
 }
 
 .custom-nav-header {
-    width: 50%;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-right: 15%;
+    align-self: center;
+    width: 45%;
+    position: absolute;
+    margin-left: 50%;
 }
 
 .custom-nav-header a {
@@ -415,11 +414,6 @@ footer {
     /*Contact Info Design End*/
 
     /* Header Responsive Design Start*/
-    header {
-        height: auto;
-        flex-direction: column;
-        align-items: left;
-    }
 
     .custom-logo-header {
         margin-left: 3%;
@@ -452,9 +446,9 @@ footer {
     .custom-nav-responsive ul {
         position: absolute;
         width: 100%;
-        height: 89vh;
+        height: 40rem;
         background: var(--primary);
-        margin-top: 18.8%;
+        top: 5.01rem;
         left: -100%;
         text-align: center;
         transition: all .5s;
@@ -490,6 +484,7 @@ footer {
 
     /* Front Page */
     .Front-Page {
+        top: -0.49rem;
         height: 55rem;
     }
 
