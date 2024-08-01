@@ -43,20 +43,6 @@ class FrontEnd {
         this.divFooterDerechos = htmlDivFooterDerechos;
     }
 
-    ocultarDiv() {
-        if (this.checkBoxNavResponsive.checked) {
-            // Ocultar el div si el checkbox está marcado
-            setTimeout(() => {
-                this.getDivOcultar().style.display = "none";
-            }, 50); // Ejemplo: 300 milisegundos
-        } else {
-            // Mostrar el div si el checkbox no está marcado
-            setTimeout(() => {
-                this.getDivOcultar().style.display = "flex";
-            }, 300);
-        }
-    }
-
     ajuntarHeader(){
         var divAdjuntar = this.getDivHeaderContactIfo();
         var xmlhttp = new XMLHttpRequest();
@@ -87,13 +73,8 @@ class FrontEnd {
 function inicializar() {
     const frontend = new FrontEnd();
 
-    frontend.setCheckBoxNavResponsive(document.getElementById("check"));
-    frontend.setDivOcultar(document.getElementById("front-page-text"));
     frontend.setDivHeaderContactIfo(document.getElementById("header-contact-info-container"));
     frontend.ajuntarHeader();
     frontend.setDivFooterDerechos(document.getElementById("footer-derechos"));
     frontend.adjuntarFooter();
-    frontend.getCheckBoxNavResponsive().addEventListener('change', () => {
-        frontend.ocultarDiv();
-    });
 }

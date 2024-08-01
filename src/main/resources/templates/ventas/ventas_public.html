@@ -2,14 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link th:href="@{/Styles/Styles.css}" rel="stylesheet">
+    <title>Ventas</title>
     <script th:src="@{/js/script.js}"></script>
     <!-- Icon Font Stylesheet -->
     <script src="https://kit.fontawesome.com/51553d23ad.js" crossorigin="anonymous"></script>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings:
+                    "slnt" 0;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
@@ -46,29 +49,12 @@
             background-color: #e4c75a;
         }
     </style>
+    <link th:href="@{/Styles/Styles.css}" rel="stylesheet">
 </head>
 <body onload="inicializar()">
 <div id="header-contact-info-container">
 
 </div>
-
-<!-- Nav Responsive Start -->
-<nav class="custom-nav-responsive">
-    <label for="check" class="custom-checkbtn">
-        <i class="fas fa-bars"></i>
-    </label>
-    <input type="checkbox" id="check">
-
-    <ul class="custom-ul-menu">
-        <li><a href="/">Inicio</a></li>
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="/alquileres/disponibles">Alquileres</a></li>
-        <li><a href="/ventas/disponibles">Ventas</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="/contact">Contacto</a></li>
-    </ul>
-</nav>
-<!-- Nav Responsive End -->
 
 <div class="container">
     <p>
