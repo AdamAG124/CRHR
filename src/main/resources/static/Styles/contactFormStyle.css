@@ -11,7 +11,7 @@ body {
     background: #fff;
     margin-top: 5%;
     margin-bottom: 5%;
-    width: 70%;
+    width: 90%;
     padding: 30px;
     box-shadow: 0px 0px 10px 0px #000;
 }
@@ -78,5 +78,9 @@ body {
 @media (max-width: 768px) {
     .contact-container {
         margin-top: 40%; /* Margin top añadido */
+    }
+
+    .contact-info {
+        display: block;
     }
 }
